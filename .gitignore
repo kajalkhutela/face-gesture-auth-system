@@ -150,13 +150,15 @@ logs/
 auth.log
 log.txt
 
-# Datasets - too large for git!
+# Datasets (excluded - too large)
 face_module/dataset/
-gesture-based-captcha_/dataset/
 **/raw/
 **/processed/
 **/augmented/
 **/embeddings/
+!gesture-based-captcha_/dataset/
+
+**Note: Regenerate embeddings.npy locally after clone using dataset_scripts/embeddings.py**
 
 # Cache
 .cache/
